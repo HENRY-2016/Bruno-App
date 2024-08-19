@@ -16,7 +16,7 @@ export const smallCard = (textName)=>
                 <View style={styles.smallCardContainer}>
                     <View style={styles.smallCardRowView}>
                         <View style={styles.textView}>
-                            <Text style={styles.aboutText} >{textName}</Text>
+                            <Text style={[styles.successTexT,styles.aboutText]} >{textName}</Text>
                         </View>
                         <View style={{position: 'absolute', right: 0,marginRight:20,marginTop:20}}>
                             <AntDesign name="arrowright" size={24} color={COLORS.primaryColor} />

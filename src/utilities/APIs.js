@@ -1,21 +1,11 @@
 
 
 
-var BaseUrl = "https://student.mogahenze.com";
-// var BaseUrl = "http://192.168.0.157:8000"; // lyca
-// var BaseUrl = "http://192.168.1.157:8000"; // mtn
 
-
-export const APIUserPost = BaseUrl+"/api/student/recording/post";
-export const APILogIn = BaseUrl+"/api/student/log/in/post";
-export const APIWeek1Log = BaseUrl+"/api/student/week1/logs/data/by/regNum/";
-export const APIWeek2Log = BaseUrl+"/api/student/week2/logs/data/by/regNum/";
-export const APIWeek3Log = BaseUrl+"/api/student/week3/logs/data/by/regNum/";
-export const APIWeek4Log = BaseUrl+"/api/student/week4/logs/data/by/regNum/";
-export const APIWeek5Log = BaseUrl+"/api/student/week5/logs/data/by/regNum/";
-export const APIWeek6Log = BaseUrl+"/api/student/week6/logs/data/by/regNum/";
-
-
+export const noticeBoardUrl="https://docs.google.com/document/d/1l2RhK1D2GiK0Ji-b-av2W7c6GPY9eni8o1ZNZteXy0U/edit?usp=sharing";
+export const diplomaUrl="https://docs.google.com/document/d/1zyCnVhCM4K6TYBLRYijikkWDUc8hTn60_sZ_RJEdQs4/edit?usp=sharing";
+export const mastersUrl="https://docs.google.com/document/d/1Npb2ctcY9ykMKtP5t5i2Yk-DekDgTQcLkUgfulVgEc8/edit?usp=sharing";
+export const bachelorsUrl="https://docs.google.com/document/d/1OJFx81WEl9CGPOath6RltTvhewKxEIZX6291zW2L080/edit?usp=sharing";
 
 
 

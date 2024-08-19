@@ -2,8 +2,7 @@
 export const COLORS = {
 
     whiteColor: "#FFFFFF",
-    blackColor:'#080202',
-
+    blackColor:'#080202', 
     headerColor:"#022F50",    
     primaryColor:'#034F84',
     secondaryColor:'#3B71CA',

@@ -1,9 +1,12 @@
 
 
 import React from 'react';
-import { Text,TouchableOpacity,ScrollView, View} from 'react-native';
+import { Text,TouchableOpacity,ScrollView,Image, View} from 'react-native';
 import styles from "../utilities/stylesheet";
 import { smallCard } from '../utilities/Functions';
+import { bachelorsUrl, diplomaUrl, mastersUrl } from '../utilities/APIs';
+import PaperIcon from "../imgs/paper.png"
+
 export default class Programmes extends React.Component {
     
 constructor(props){
@@ -24,17 +27,26 @@ render() {
         <View style={styles.mainView}>
             <View style={{height:20}} ></View>
             <ScrollView showsVerticalScrollIndicator={false}>
-                <TouchableOpacity  onPress={() => this.props.navigation.navigate('ViewPaper')}>
-                    {smallCard('Masters in IT')}
+                <View style={[styles.displayCard,styles.homeImageView]}>
+                    <Image source={PaperIcon} style={styles.homeImage} />
+                    <View style={{height:20}} ></View>
+                    <Text style={[styles.successTexT,styles.aboutText,styles.boldTexT]} >Search For A Past Paper</Text>
+                    <View style={{height:20}} ></View>
+                </View>
+
+                <View style={{height:20}} ></View>
+                <TouchableOpacity  onPress={() => this.props.navigation.navigate('DocViewer',{urlLink:mastersUrl})}>
+                    {smallCard('Masters in Information Technology')}
                 </TouchableOpacity>
 
                 <View style={{height:10}} ></View>
-                <TouchableOpacity  onPress={() => this.props.navigation.navigate('ViewPaper')}>
-                    {smallCard('Bachelor of IT')}
+                <TouchableOpacity  onPress={() => this.props.navigation.navigate('DocViewer',{urlLink:bachelorsUrl})}>
+                    {smallCard('Bachelor of Information Technology')}
                 </TouchableOpacity>
+                
                 <View style={{height:10}} ></View>
-                <TouchableOpacity  onPress={() => this.props.navigation.navigate('ViewPaper')}>
-                    {smallCard('Diploma in IT')}
+                <TouchableOpacity  onPress={() => this.props.navigation.navigate('DocViewer',{urlLink:diplomaUrl})}>
+                    {smallCard('Diploma in Information Technology')}
                 </TouchableOpacity>
                 <View style={{height:20}} ></View>
             </ScrollView>

@@ -1,9 +1,14 @@
 
 
 import React from 'react';
-import { Text,TouchableOpacity,ScrollView, View} from 'react-native';
+import { Text, Image,TouchableOpacity,ScrollView, View} from 'react-native';
 import styles from "../utilities/stylesheet";
 import { smallCard } from '../utilities/Functions';
+import UserIcon from "../imgs/user.png";
+import { noticeBoardUrl } from '../utilities/APIs';
+
+
+
 export default class Home extends React.Component {
     
 constructor(props){
@@ -24,7 +29,15 @@ render() {
         <View style={styles.mainView}>
             <View style={{height:20}} ></View>
             <ScrollView showsVerticalScrollIndicator={false}>
-                <TouchableOpacity  onPress={() => this.props.navigation.navigate('NoticeBoard')}>
+                <View style={[styles.displayCard,styles.homeImageView]}>
+                    <Image source={UserIcon} style={styles.homeImage} />
+                    <View style={{height:20}} ></View>
+                    <Text style={[styles.successTexT,styles.aboutText,styles.boldTexT]} >Student Application</Text>
+                    <View style={{height:20}} ></View>
+
+                </View>
+                <View style={{height:20}} ></View>
+                <TouchableOpacity  onPress={() => this.props.navigation.navigate('DocViewer',{urlLink:noticeBoardUrl})}>
                     {smallCard('Notice Board')}
                 </TouchableOpacity>
 

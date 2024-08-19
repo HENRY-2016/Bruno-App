@@ -29,89 +29,30 @@ export default StyleSheet.create(
         borderWidth:2,
     },
 
-    // smallCard:{height:70,width:'95%',marginLeft:10,marginRight:10},
-    recordCard:{width:'95%',marginLeft:10,marginRight:10},
-    // Buttons 
-    buttonsStyle:
-	{
-		flexDirection: 'row',
-		marginBottom:10,marginLeft:5,
-        borderRadius:15,
-		alignItems: 'center', justifyContent: 'center',
-	},
-    recordButtons:{borderRadius:10, height:40,},
-    recordButtonsText:{marginLeft:10,marginRight:10,marginTop:10},
-    recordButtonsIcon:{marginTop:8, marginLeft:10,marginRight:10},
-    recordAddButton:{backgroundColor:COLORS.successColor},
-    recordDeleteButton:{backgroundColor:COLORS.dangerColor},
-    nextButton:{backgroundColor:COLORS.secondaryColor,borderRadius:10, height:45,width:'95%',marginLeft:10},
-    logoutButton:{backgroundColor:COLORS.dangerColor,borderRadius:10, height:45,width:'95%',marginLeft:10},
-    // weeksButton:{borderRadius:10, height:40,width:85,},
-    // activeWeekButton:{backgroundColor:COLORS.successColor},
-    // inActiveWeekButton:{backgroundColor:COLORS.secondaryColor},
-    // daysButton:{borderRadius:50, height:30,width:35,},
-    // activeDayButton:{backgroundColor:COLORS.successColor},
-    // inActiveDayButton:{backgroundColor:COLORS.dangerColor},
-    dayButton:{backgroundColor:COLORS.dangerColor,borderRadius:10, height:45,width:'95%',marginLeft:10},
+    homeImageView:{
+        alignItems:'center',
+        marginTop:"8%",
+    },
+    homeImage:{
+        marginTop:20,
+    },
 
+    smallCard:{height:70,width:'95%',marginLeft:10,marginRight:10},
+    smallCardContainer:{height:50,borderRadius:10,},
+    smallCardRowView:{flexDirection:'row',},
+    textView:
+    {
+        marginTop:25,marginLeft:'10%',
+        // justifyContent:'center',
+        // backgroundColor:COLORS.secondaryColor,
 
+    },
+    aboutText:{fontSize:16,},
 
-
-    inputs: {
-		margin: 15,
-		height: 40,width:'90%',
-		color:COLORS.darkColor,
-		fontSize:18,
-		textAlign:'center',
-		borderWidth: 3,borderRadius: 10,
-		borderColor:COLORS.secondaryColor,
-	},
-
-    userIcon:{width:130,height: 130,},
-
-
-
-
-
-//  Picker
-pickerSelectionInputView1: 
-{
-	margin: 15, height: 40,
-	color:COLORS.black,
-	fontSize:19,width:'90%',
-	textAlign:'center',
-	borderWidth: 3,borderRadius: 10,
-	borderColor:COLORS.secondaryColor,
-
-},
-pickerSelectionInputs:
-{
-	marginTop: -10,marginLeft:10,
-	height: 40,color:COLORS.primaryColor,
-	fontSize:20,width:'90%',
-},
-
-
-
-smallCard:{height:70,width:'95%',marginLeft:10,marginRight:10},
-smallCardContainer:{height:50,borderRadius:10,},
-smallCardRowView:{flexDirection:'row',},
-textView:
-{
-    marginTop:25,marginLeft:'10%',
-    // justifyContent:'center',
-    // backgroundColor:COLORS.secondaryColor,
-
-},
-aboutText:{fontSize:16,},
-
-loaderContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  webview: {
-    flex: 1,
-  },
-
+    loaderContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor:COLORS.whiteColor,
+        },
 });

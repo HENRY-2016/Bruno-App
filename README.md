@@ -1,13 +1,13 @@
 
 
 ## CLIENT NAME: 
-    ATUHAISE ESTHER
+    NGABIRANO BRUNO
 
 ##  Date
-  Date : 08/06/2024
+  Date : 17/08/2024
 
 ##  App Name
-  Real Time Internship Reporting App
+  Student Mobile App
 
 ## How to install the project it uses npm 
   1. Clone the repo
@@ -21,11 +21,9 @@
 
 ## GitHub Pushing
     git add .
-    git commit -m 'Showing Esther How To Upload Code To Github'
+    git commit -m 'New Updates And Changes'
     git branch -M main
     git push -u -f origin main
 
 ## Create An App
   npx create-expo-app@latest --template blank 
-
-use email on login in 
